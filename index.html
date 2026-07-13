@@ -72,7 +72,7 @@ h1 {
 .hero .subtitle {
   font-size: 1.1rem;
   font-weight: bold;
-  max-width: 900px;
+  max-width: 100%; /* Expanded to allow text to stretch completely in a straight line */
   margin: 0 auto;
   color: #312933;
 }
@@ -128,13 +128,12 @@ h1 {
 }
 
 .isolated-bullet-box {
-  flex: 1.8; /* Increased flex ratio to support side-by-side columns nicely */
+  flex: 1; /* Decreased flex ratio to make the box significantly narrower */
   padding: 25px;
   border: 5px solid gray;
   background-color: #ffffff;
 }
 
-/* Two-column layout container for lists inside the box */
 .bullet-columns-container {
   display: flex;
   flex-direction: row;
@@ -148,7 +147,7 @@ h1 {
 }
 
 .isolated-contact-box {
-  flex: 1;
+  flex: 1.2; /* Increased flex ratio to hand more layout space to your text and button */
   padding: 20px;
   text-align: center;
   display: flex;
@@ -201,10 +200,8 @@ h1 {
 
   <div class="hero">
     <div class="title"><p> Honest pricing upfront — you know the cost before I start. </p></div>
-    <div class="subtitle"><p> No high-pressure sales. No mystery bills. Just straightforward repair work from someone right here in the Cincinnati area..</p></div> 
+    <div class="subtitle"><p> No high-pressure sales. No mystery bills. Just straightforward repair work from someone right here in the Cincinnati area. </p></div> 
   </div>
-
-
 
   <div class="main">
     
@@ -219,7 +216,7 @@ h1 {
       </div>
 
       <div class="single-image-container">
-        <img src="9611.jpg" alt="Plumbing Service Showcase">
+        <img src="962.jpg" alt="Plumbing Service Showcase">
       </div>
     </div>
 
@@ -232,20 +229,19 @@ h1 {
           <div class="bullet-column">
             <ul>
               <li> Refrigerator repair & Installation </li>
-<li> Freezer repair & Installation </li>
-<li> Oven repair & Installation </li>
-<li> Built-in Dishwasher repair & Installation </li>
-<li> Portable Dishwasher repair & Installation </li>
-<li> Washing Machine repair & Installation </li>
-<li> Dryer repair & Installation </li>
-<li> Garbage Disposal repair & Installation </li>
-<li> Electronic appliances repair & Installation </li>
-<li> Kitchen appliances repair & Installation  </li>
-<li> Electrical appliances repair & Installation  </li>
-<li> Common household appliances repair & Installation  </li>
+              <li> Freezer repair & Installation </li>
+              <li> Oven repair & Installation </li>
+              <li> Built-in Dishwasher repair & Installation </li>
+              <li> Portable Dishwasher repair & Installation </li>
+              <li> Washing Machine repair & Installation </li>
+              <li> Dryer repair & Installation </li>
+              <li> Garbage Disposal repair & Installation </li>
+              <li> Electronic appliances repair & Installation </li>
+              <li> Kitchen appliances repair & Installation  </li>
+              <li> Electrical appliances repair & Installation  </li>
+              <li> Common household appliances repair & Installation  </li>
             </ul>
           </div>
-          
         </div>
 
       </div>
