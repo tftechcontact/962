@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Diebels Dumpsters and Demolition Inc. </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Impact&family=Oswald:wght=700&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color: #018195;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 17px; 
+  padding: 50px; 
+  margin: 30px;   
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "hero"
+    "main"
+    "footer";
+  gap: 10px;
+  background-color: transparent; 
+}
+
+.header {
+  grid-area: header;
+  background-color: #2f4963;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Oswald', 'Arial Black', sans-serif;
+  color: #ffffff;
+  font-size: 300%;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: #e8dfc8; 
+  color: #312933;
+  text-align: center; 
+  border: 6px solid #312933;
+  padding: 30px;
+  width: auto;
+  margin: 0 10px 30px 10px; 
+}
+
+.hero .title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #312933;
+  margin-bottom: 5px;
+}
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #312933;
+}
+
+.main {
+  grid-area: main;
+  border: 2px solid powderblue;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 10px;
+  background-color: #f4f4f4; 
+}
+
+.intro-split-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.p-main {
+  flex: 1.2;
+  color: #251803;
+  font-family: courier;
+  font-size: 15px;
+}
+
+.single-image-container {
+  flex: 1;
+  max-width: 500px;
+  height: 350px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.single-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-split-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.isolated-bullet-box {
+  flex: 1.8; /* Increased flex ratio to support side-by-side columns nicely */
+  padding: 25px;
+  border: 5px solid gray;
+  background-color: #ffffff;
+}
+
+/* Two-column layout container for lists inside the box */
+.bullet-columns-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.bullet-column {
+  flex: 1;
+}
+
+.isolated-contact-box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-contact-section {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.email-button {
+  display: inline-block;
+  background-color: #0f4687;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: auto;
+  text-align: center;
+  border: none;
+}
+
+.email-button:hover {
+  background-color: #0b3463;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #2f4963;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">
+    <h1> No Pressure Appliance Repair & Installation  </h1>
+  </div>
+
+  <div class="hero">
+    <div class="title"><p> Honest pricing upfront — you know the cost before I start. </p></div>
+    <div class="subtitle"><p> No high-pressure sales. No mystery bills. Just straightforward repair work from someone right here in the Cincinnati area..</p></div> 
+  </div>
+
+
+
+  <div class="main">
+    
+    <div class="intro-split-row">
+      <div class="p-main">
+        <p> Here's my simple approach: </p>
+        <p> I'm on time, every time, I use plain English — no tech talk, no upsell, I provide the same fair rate any day of the week, and I leave your place clean when I'm done. </p>
+         <p>When your fridge stopped cooling, or your washer won't spin, or your dryer's just tumbling cold. 
+          You need someone who actually picks up the phone, shows up on time, and tells you the cost before touching anything. That's exactly how I work.
+          I usually answer when you call. Most of the time I can be out same day or next day. If the repair doesn't make sense for your situation, 
+          I'll tell you straight — no hard feelings. </p>
+      </div>
+
+      <div class="single-image-container">
+        <img src="9611.jpg" alt="Plumbing Service Showcase">
+      </div>
+    </div>
+
+    <div class="bottom-split-layout">
+      
+      <div class="isolated-bullet-box">
+        <h2> I work on: </h2>
+        
+        <div class="bullet-columns-container">
+          <div class="bullet-column">
+            <ul>
+              <li> Refrigerator repair & Installation </li>
+<li> Freezer repair & Installation </li>
+<li> Oven repair & Installation </li>
+<li> Built-in Dishwasher repair & Installation </li>
+<li> Portable Dishwasher repair & Installation </li>
+<li> Washing Machine repair & Installation </li>
+<li> Dryer repair & Installation </li>
+<li> Garbage Disposal repair & Installation </li>
+<li> Electronic appliances repair & Installation </li>
+<li> Kitchen appliances repair & Installation  </li>
+<li> Electrical appliances repair & Installation  </li>
+<li> Common household appliances repair & Installation  </li>
+            </ul>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="isolated-contact-box">
+        <h4> I'm local to Cincinnati - working in this area every day.</h4>
+        <div class="center-contact-section">
+          <p> Call Now at Call 513-838-5711 </p>
+          <a href="mailto:@gmail.com" target="_blank" class="email-button">Send Email</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; <b> No Pressure Appliance Repair & Installation </b> 2026 All Rights Reserved.</p> 
+  </div>
+
+</div>
+
+</body>
+</html>
